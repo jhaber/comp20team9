@@ -1,0 +1,125 @@
+@media only screen and (max-device-width: 480px) {
+
+#header-wrap {
+
+    width: 50px;
+}
+
+
+ul#navbar {
+margin: auto;
+position:fixed;
+padding: 10px;
+display:block;
+margin-bottom: 40px;
+height:500px;
+list-style-type:circle !important;
+list-style-position: inherit;
+background:none;
+float: left;
+text-align: center;
+}
+
+ul#navbar li{
+text-align: center;
+width: 100%;
+height: 100px;
+display:block;
+font-size: 40px;
+}
+
+ul#navbar li a{
+text-align: center;
+margin-left: 40%;
+color:#000000;
+text-decoration:none;
+}
+
+ul#navbar li a img{
+    margin-right: 200px;
+	width:200px;
+	padding:0px 0 0 20px;
+}
+
+ul#navbar li form {
+    padding:0;
+    position: absolute;
+}
+
+input#searchbutton {
+    position:absolute;
+}
+
+ul#navbar li a:hover{
+    background:none;
+}
+
+ul#navbar li a.current,ul#navbar li a.current:hover{
+
+    color:#000;
+    background:none;
+}
+
+.start a {
+    background:none !important;}
+
+#content {
+	float: none;
+	width: 95%;
+    margin-left: 5%;
+}
+#sidebar {
+	width: 90%;
+	margin-left: 5%;
+}
+
+
+#container {
+    font: 40px sans-serif;
+    position: absolute;
+    margin-top: 500px;
+}
+	html, body {
+		font: 12px/15px sans-serif;
+		background: #fff;
+		padding: 3px;
+		color: #000;
+		margin: 0;
+		}
+	#sidebar, #footer {
+		display: none;
+		}
+    ul#navbar {
+        display:inline;
+    }
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+		}
+	#content img { 
+		max-width: 250px;
+		}
+	.center {
+		width: 100% !important;
+		text-align: center;
+		}
+	a:link, a:visited {
+		text-decoration: underline;
+		color: #0000CC;
+		}
+	a:hover, a:active {
+		text-decoration: underline;
+		color: #660066;
+		}
+
+}
+/* iPhone-specific styles */
+@media only screen and (max-device-width: 480px) { 
+
+	html {
+		-webkit-text-size-adjust: none;
+		}
+
+}
+
+
+

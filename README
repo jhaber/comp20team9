@@ -1,0 +1,27 @@
+www.cs.tufts.edu/~jhaber02/comp20/group
+
+Some features have stopped working since our presentation:
+
+1. We used to use cURL to get information from other sites.
+This stopped working, and we had to switch over to file_get_contents.
+Our only hypothesis is that cURL stopped working because of sessions.
+
+2. Previously, if a movie wasn't in our db, it would load the APIs and then get added to the db.
+Once a movie was in the db, our movies page would load it from there rather than from APIs.
+Now, movies are no longer getting into the database at all.
+
+Another result of this db problem is that our Movie Popularity Chart can't be dynamic.
+Since we can't load movies into the db anymore, we can't keep track of pageviews.
+So, we have fed dummy data into the Popularity Chart.
+Our site isn't old enough or popular enough to generate interesting pageview info anyway.
+
+3. The theaters page used to load the top 5 yelp results and top top 5 theaters results.
+If a user had a favorite theater or favorite food, these would be prioritized.
+These results would also be loaded onto a google map.
+Now, the yelp results aren't loading at all, and the movie results aren't getting placed on the map.
+We have no idea why.
+
+
+
+
+We didn't allow enough time to fix these issues, because we thought the features would still be working.
